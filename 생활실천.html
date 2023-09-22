@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>wwf 세계자연기금 홈페이지 한재희</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="hwrap">
+            <h1><a href="index.html"><img src="img/logo.png" alt="wwflogo"></a></h1>
+            <!-- 글로벌 네비게이션 -->
+            <ul class="gnb pc">
+                <li>
+                    <a href="#">소개</a>
+                    <ul>
+                        <li><a href="#">기관소개</a></li>
+                        <li><a href="#">연혁</a></li>
+                        <li><a href="#">투명경영</a></li>
+                        <li><a href="#">함께하는 사람들</a></li>
+                        <li><a href="#">인재채용</a></li>
+                        <li><a href="#">자원봉사자 모집</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="#">활동</a>
+                    <ul>
+                        <li><a href="#">기후·에너지</a></li>
+                        <li><a href="#">해양</a></li>
+                        <li><a href="#">야생동물</a></li>
+                        <li><a href="#">식량</a></li>
+                        <li><a href="#">담수</a></li>
+                        <li><a href="#">산림</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">금융</a></li>
+                        <li><a href="#">비즈니스</a></li>
+                        <li><a href="#">기업 파트너십</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">참여</a>
+                    <ul>
+                        <li><a href="#">생활실천</a></li>
+                        <li><a href="#">어스아워</a></li>
+                        <li><a href="#">기업참여</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="#">소식</a>
+                    <ul>
+                        <li><a href="#">언론보도</a></li>
+                        <li><a href="#">소식</a></li>
+                        <li><a href="#">판다메일</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="#">자료</a>
+                    <ul>
+                        <li><a href="#">보고서</a></li>
+                        <li><a href="#">영상자료</a></li>
+                        <li><a href="#">기후위기 교육페이지</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">후원</a>
+                    <ul>
+                        <li><a href="#">후원 안내</a></li>
+                        <li><a href="#">북극곰보호</a></li>
+                        <li><a href="#">멸종동물보호</a></li>
+                        <li><a href="#">기후변화</a></li>
+                        <li><a href="#">플라스틱프리</a></li>
+                        <li><a href="#">기타 후원 캠페인</a></li>
+                        <li><a href="#">기업 후원</a></li>
+                    </ul>
+                </li>
+            </ul> 
+            
+            <ul class="infor pc">
+                <li><a href="#">자주묻는 질문</a></li>
+                <li><a href="#">마이페이지</a></li>
+            </ul>
+            
+            <button class="hediconbtn pc"><i class="xi-search"></i></button>
+
+            <a href="#" class="pc">후원하기</a>
+        </div>
+
+        <!-- 모바일 -->
+        <button class="burger mob"><i class="xi-bars"></i></button>
+        <!-- 모바일 헤더 네비 총집합본 -->
+        <div class="mgnb mob">
+            <div class="search">
+                <!-- 모바일 네비 닫기버튼 -->
+                <button class="backbtn"><i class="xi-close"></i></button>
+                <!-- 모바일 검색창 -->
+                <div>
+                    <input type="text" placeholder="검색어를 입력해주세요." style="color: #fff; font-size: 15px;">
+                    <button class="hediconbtn"><i class="xi-search"></i></button>
+                </div>
+
+                <ul class="mobinfor">
+                    <li><a href="#">자주묻는 질문</a></li>
+                    <li><a href="#">마이페이지</a></li>
+                    <li><a href="#">후원하기</a></li>
+                </ul>                
+            </div>
+            <!-- 주요네비 -->
+            <div class="mgnbmenu">
+                <ul>
+                    <li class="select"><a href="#">소개</a></li>
+                    <li><a href="#">활동</a></li>
+                    <li><a href="#">참여</a></li>
+                    <li><a href="#">소식</a></li>
+                    <li><a href="#">자료</a></li>
+                    <li><a href="#">후원</a></li>
+                </ul>
+            </div>
+            <!-- 세부네비 -->
+            <div class="msnb">
+                <!-- 소개 -->
+                <ul class="on">
+                    <li><a href="#">기관소개</a></li>
+                    <li><a href="#">연혁</a></li>
+                    <li><a href="#">투명경영</a></li>
+                    <li><a href="#">함께하는 사람들</a></li>
+                    <li><a href="#">인재채용</a></li>
+                    <li><a href="#">자원봉사자 모집</a></li>
+                </ul>
+                <!-- 활동 -->
+                <ul>
+                    <li><a href="#">기후·에너지</a></li>
+                    <li><a href="#">해양</a></li>
+                    <li><a href="#">야생동물</a></li>
+                    <li><a href="#">식량</a></li>
+                    <li><a href="#">담수</a></li>
+                    <li><a href="#">산림</a></li>
+                    <li><a href="#">금융</a></li>
+                    <li><a href="#">비즈니스</a></li>
+                    <li><a href="#">기업 파트너십</a></li>
+                </ul>
+                <!-- 참여 -->
+                <ul>
+                    <li><a href="#">생활실천</a></li>
+                    <li><a href="#">어스아워</a></li>
+                    <li><a href="#">기업참여</a></li>
+                </ul>
+                <!-- 소식 -->
+                <ul>
+                    <li><a href="#">언론보도</a></li>
+                    <li><a href="#">소식</a></li>
+                    <li><a href="#">판다메일</a></li>
+                </ul>
+                <!-- 자료 -->
+                <ul>
+                    <li><a href="#">보고서</a></li>
+                    <li><a href="#">영상자료</a></li>
+                    <li><a href="#">기후위기 교육페이지</a></li>
+                </ul>
+                <!-- 후워 -->
+                <ul>
+                    <li><a href="#">후원 안내</a></li>
+                    <li><a href="#">북극곰보호</a></li>
+                    <li><a href="#">멸종위기보호</a></li>
+                    <li><a href="#">기후변화</a></li>
+                    <li><a href="#">플라스틱프리</a></li>
+                    <li><a href="#">기타 후원 캠페인</a></li>
+                    <li><a href="#">기업 후원</a></li>
+                </ul>
+            </div>
+        </div>
+        
+    </header>
+
+    <!-- section pisv1 -->
+    <section id="pisv1">
+        <h2 class="blind">생활실천 비주얼배너</h2>
+
+        <div class="text">
+            <p>LIVE GREEN</p>
+            <h3>생활실천</h3>
+            <span class="pc"><i class="xi-home"></i> > &nbsp; 참여 &nbsp; > &nbsp; 생활실천</span>
+        </div>
+    </section>
+
+    <!-- scrollbar  -->
+    <div class="scrolbar">
+        <a href="#none" class="select">DID YOU KNOW?</a>
+        <a href="#none">소중한 지구를 지키는 GREEN TIP</a>
+    </div>
+
+    <!-- section pisv2 -->
+    <section id="pisv2">
+        <h2 class="blind">너 이거 알아?</h2>
+
+        <div class="wrap">
+            <h3>DID YOU KNOW?</h3>
+            <p class="pisv2block"></p>
+        </div>
+
+        <div class="wrap pisv2ul">
+            <ul class="duk">
+                <li>
+                    <img src="img/생활실천-굴뚝.jpg" alt="온실가스 배출량 10%">
+                    <span>음식물 쓰레기로 인한 온실가스는</span>
+                    <h3>전 세계 배출량의 약 10%에 달합니다.</h3>
+                    <p>특히, 전체 생산되는 식량의 약 40%는<br>단 한 번도 먹지 않은 상태로 버려지고 있습니다.</p>
+                </li>
+
+                <li>
+                    <img src="img/생활실천-비단.jpg" alt="2억톤 플라스틱 쓰레기 생산합니다">
+                    <span>우리는 연간</span>
+                    <h3>2억t(약 523조 개의 플라스틱 빨대)의<br>플라스틱 쓰레기를 생산합니다</h3>
+                    <p>이를 하나의 국가로 본다면,<br>세계에서 5번째로 큰 온실가스 배출원이 될 것입니다.</p>
+                </li>
+
+                <li>
+                    <img src="img/생활실천-물방울.jpg" alt="2,700리터의 물이 필요합니다.">
+                    <span>우리가 입는 면 티셔츠는 1장을 만드는데</span>
+                    <h3>약 2,700L의 물이 필요합니다.</h3>
+                    <p>이는 한 사람이 900일 동안<br>식수로 마실 수 있는 양입니다.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- section pisv3 -->
+    <section id="pisv3">
+        <h2 class="blind">소중한 지구를 지키는 그린 팁</h2>
+        
+
+        <div class="wrap">
+            <h3>소중한 지구를 지키는<br><span>GREEN TIP <span>!</span></span></h3>
+
+            <div class="pisv3youtube">
+                <iframe width="600" height="355" src="https://www.youtube.com/embed/fUaqNg92DQc?si=U2VBWxmF5lJRI2LP" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen style="border: 7px solid #fff;" class="pc"></iframe>
+                <iframe width="98.5%" height="250px" src="https://www.youtube.com/embed/fUaqNg92DQc?si=U2VBWxmF5lJRI2LP" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen style="border: 3px solid #fff;" class="mob"></iframe>
+            </div>
+
+            <p>WWF와 함께 지구를 위해 할 수 있는 실천방법은 많이 있습니다. 일상 속에서 전등을 끄거나, 음식을<br>
+                남기지 않는 작은 습관들이 쌓일수록 우리가 사는 지구에 가해지는 부담은 줄어듭니다. 우리의 생활 속에서<br>실천할 수 있는 방법들을 찾아보세요.</p>
+
+            <p>WWF는 여러분이 지구를 위한 목소리를 내거나, 정책 변화를 위한 서명 또는 캠페인에 참여하거나, 가족과<br>함께 자연에 대해 더 많이 배우고 영감을 
+            주는 모든 활동에 함께할 것입니다.</p>
+        </div>
+    </section>
+
+    <!-- section pisv4 -->
+    <section id="pisv4">
+        <h2 class="blind">에너지 기후 음식 여행 과포장 알리미</h2>
+
+        <div class="wrap">
+            <ul class="pi4slide">
+                <li>
+                    <img src="img/생활실천-발전기.jpg" alt="ENERGY & RESOURCES">
+                    <div>
+                        <h3>ENERGY & RESOURCES</h3>
+                        <p>여름 냉방은 1&#8451;높게, 겨울난방은 1&#8451;낮게<br>설정하기</p>
+                        <p>수도꼭지를 잘 잠그고 샤워 시간 줄이기</p>
+                        <p>화장지, 종이, 가구 등 모든 목재 및 임산물에<br>FSC(국제산림관리협의회) 인증 라벨<br>
+                            확인하기<br><span>(FSC인증 라벨 제품을 사용하면 지속가능한<br>방식으로관리된 나무를 선택함으로써
+                            숲과 야생동물을<br>모두 보전할 수 있습니다.)</span></p>
+                        <p>종이를 절약하며 사용하고 재활용하기</p>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="img/생활실천-감귤.jpg" alt="FOODS">
+                    <div>
+                        <h3>FOODS</h3>
+                        <p>어린 생선(풀치, 노가리, 총알오징어등)<br>구매하지 않기</p>
+                        <p>육식보다 탄소배출이 적은 채소, 콩류, 견과류<br>및 통곡물 등 식물성 위주의 식사 늘리기</p>
+                        <p>가공식품 소비 줄이고 신선하고 건강한 음식<br>구매하기</p>
+                        <p>필요 이상의 음식 섭취 줄이고 다양한 식품<br>골고루 먹기</p>
+                        <p>지속가능한 방식으로 생산된 식품 선택하기</p>
+                        <p>지역에서 생산되는 제품을 선택해 탄소발자국<br>줄이기</p>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="img/생활실천-자전거.jpg" alt="TRAVEL & TRANSPORT">
+                    <div>
+                        <h3>TRAVEL & TRANSPORT</h3>
+                        <p>가능한 걷거나 자전거 및 대중교통 이용하기</p>
+                        <p>여행할 때 탄소를 적게 배출하는 이동수단<br>고려하기</p>
+                        <p>지속가능한 방식으로 운영되는 숙소 선택하기<br>(플라스틱 제로를 실천하거나 지역에서 나는 <br>식자재를 활용하는 숙소 등 )</p>
+                        <p>일회용 어메니티(개인위생용품) 사용 대신 <br>개인 어메니티 챙겨 다니기</p>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="img/생활실천-쓰레기.jpg" alt="PLASTICS">
+                    <div>
+                        <h3>PLASTICS</h3>
+                        <p>과대 포장한 제품, 선물 세트 등 피하기</p>
+                        <p>재활용이 어려운 유색 페트병 대신 투명<br>페트병을 사용하고 분리배출하기</p>
+                        <p>플라스틱 통은 여러 번 재사용하기</p>
+                        <p>음료 마실 때 빨대나 일회용 플라스틱 컵<br>사용하지 않기</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- pisv4btn -->
+        <ul class="pisv4btn mob">
+            <li class="select"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>
+
+    <!-- section pisv5 -->
+    <section id="pisv5">
+        <h2 class="blind">자주묻는 질문, 후원하기 링크</h2>
+
+        <!-- 자주묻는질문, 후원하기, 어스아워 링크 -->
+        <div class="wrap">
+            <div>
+                <a href="#">
+                    <img src="img/생활실천-첼시소년.jpg" alt="자주묻는 질문">
+                    <h3>자주묻는 질문</h3>
+                    <p>궁금하신 사항이 있으신가요?</p>
+                    <span><i class="xi-angle-right"></i></span>
+                </a>
+            </div>
+
+            <div>
+                <a href="#">
+                    <img src="img/생활실천-노을.jpg" alt="후원하기">
+                    <h3>후원하기</h3>
+                    <p>자연과 사람이 조화를 이루는 미래,<br class="mob"> 함께 만들어<br class="pc">주세요!</p>
+                    <span><i class="xi-angle-right"></i></span>
+                </a>
+            </div>
+
+            <div>
+                <a href="#">
+                    <img src="img/생활실천-지구.jpg" alt="어스아워 바로가기">
+                    <h3>어스아워 바로가기</h3>
+                    <p>세계 최대 규모의 기후위기 대응<br class="mob"> 캠페인<br class="pc">'어스아워'에 참여하세요!</p>
+                    <span><i class="xi-angle-right"></i></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+   <!-- notice newssub -->
+    <section id="main7">
+    <h2 class="blind">뉴스레터 구독하기</h2>
+
+    <div class="wrap">
+        <!-- 소개, 활동, 참여, 소식, 자료, 후원 -->
+        <div class="notice pc">
+            <ul>
+                <li>소개</li>
+                <li><a href="#">기관소개</a></li>
+                <li><a href="#">연혁</a></li>
+                <li><a href="#">투명경영</a></li>
+                <li><a href="#">함께하는 사람들</a></li>
+                <li><a href="#">인재채용</a></li>
+                <li><a href="#">자원봉사자 모집</a></li>
+            </ul>
+
+            <ul>
+                <li>활동</li>
+                <li><a href="#">기후에너지</a></li>
+                <li><a href="#">해양</a></li>
+                <li><a href="#">야생동물</a></li>
+                <li><a href="#">식량</a></li>
+                <li><a href="#">담수</a></li>
+                <li><a href="#">산림</a></li>
+                <li>
+                    <ul class="sky">
+                        <li><a href="#">금융</a></li>
+                        <li><a href="#">비즈니스</a></li>
+                        <li><a href="#">기업 파트너십</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+
+            <ul>
+                <li>참여</li>
+                <li><a href="#">생활 실천</a></li>
+                <li><a href="#">어스 아워</a></li>
+                <li><a href="#">기업참여</a></li>
+            </ul>
+
+            <ul>
+                <li>소식</li>
+                <li><a href="#">소식</a></li>
+                <li><a href="#">언론보도</a></li>
+                <li><a href="#">판다메일</a></li>
+            </ul>
+
+            <ul>
+                <li>자료</li>
+                <li><a href="#">보고서</a></li>
+                <li><a href="#">영상자료</a></li>
+                <li><a href="#">기후위기 교육페이지</a></li>
+            </ul>
+
+            <ul>
+                <li>후원</li>
+                <li><a href="#">북극곰보호</a></li>
+                <li><a href="#">후원안내</a></li>
+            </ul>
+        </div>
+
+        <!-- 뉴스레터 구독하기란 -->
+        <div class="sub">
+            <h3>뉴스레터 구독하기</h3>
+            <p>WWF 뉴스레터를 구독하고 최근 소식을 받아보세요.<br>입력한 메일 주소로 WWF뉴스레터를 받아보실 수 있습니다.</p>
+
+            <div class="name">
+                <h4>* 이름</h4>
+                <span>* 필수입력사항</span><br>
+                <input type="text">
+
+                <h4>* 이메일</h4>
+                <input type="text">
+
+                <h4>전화번호</h4>
+                <input type="text">
+            </div>
+
+            <div class="checkbox">
+                <input type="checkbox" id="pri" value="개인정보 처리방침" name="pri">
+                        <label for="pri"><span>[필수]</span> 개인정보 처리방침</label><br>
+                <input type="checkbox" id="mar" value="마케팅 수신동의" name="mar">
+                        <label for="mar"><span>[필수]</span> 마케팅 수신동의</label>
+                    <br>
+                <a href="#">구독신청</a>
+            </div>
+        </div>
+
+    </div>
+    </section>
+
+
+     <!-- footer -->
+    <footer>
+        <h2 class="blind">하단 웹페이지 정보표시구역</h2>
+    
+        <div class="wrap">
+            <div class="fot1">
+                <ul>
+                    <li><a href="#">후원회원 약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">자주묻는질문</a></li>
+                    <li><a href="#">문의</a></li>
+                </ul>
+                <!-- sns  -->
+                <ul class="sns">
+                    <li><img src="img/푸터-follow.jpg" alt="follow us"></li>
+                    <li><a href="https://www.instagram.com/wwfkorea/" target="_blank"><img src="img/insta.jpg" alt="insta"></a></li>
+                    <li><a href="https://www.facebook.com/WWFKorea/" target="_blank"><img src="img/facebook.jpg" alt="facebook"></a></li>
+                    <li><a href="https://www.youtube.com/c/WWFKorea/featured" target="_blank"><img src="img/youtube.jpg" alt="youtube"></a></li>
+                    <li><a href="https://blog.naver.com/wwf-korea" target="_blank"><img src="img/blog.jpg" alt="blog"></a></li>
+                </ul>
+            </div>
+    
+            <div class="addr">
+                <img src="img/logo.png" alt="세계자연기금 로고">
+    
+                <div>
+                    <h3>재단법인 한국세계자연기금</h3>
+                    <ul>
+                        <li><span>대표자</span> 홍정욱</li>
+                        <li><span>고유번호</span> 101-82-23485</li><br class="mob">
+                        <li><span>주소</span> 서울특별시 종로구 종로 47(공평동) SC제일은행본점<br class="mob">빌딩 15층 (재) 한국세계자연기금</li><br class="mob">
+                        <li><span>대표전화</span> <a href="tel:027221601">02-722-1601</a></li><br>
+                        <li><span>후원문의</span> <a href="mailto:">members@wwfkorea.or.kr</a></li><br class="mob">
+                        <li><span>기업문의</span> <a href="mailto:">partnership@wwfkorea.or.kr</a></li><br class="mob">
+                        <li><span>홍보 및 마케팅 문의</span> <a href="mailto:">marketing@wwfkorea.or.kr</a></li><br class="mob">
+                        <li><span>기타문의</span> <a href="mailto:">info@wwfkorea.or.kr</a></li>
+                    </ul>
+    
+                    <address>
+                        <span>&copy; 2021 WWF - World Wide Fund For Nature (also<br class="mob"> Known as World Wildlife Fund). <br class="mob">
+                            <span style="text-decoration: underline;">Creative Commons licence.</span>
+                        </span>
+                    </address>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!--페이지 탑버튼  -->
+    <a href="#" class="pagetop"><i class="xi-angle-up"></i></a>
+    <script src="main.js"></script>
+    <script src="visualbenner.js"></script>
+    <script src="pisv.js"></script>
+</body>
+
+
+</html>

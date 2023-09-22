@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>wwf 세계자연기금 홈페이지 한재희</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="hwrap">
+            <h1><a href="index.html"><img src="img/logo.png" alt="wwflogo"></a></h1>
+            <!-- 글로벌 네비게이션 -->
+            <ul class="gnb pc">
+                <li>
+                    <a href="#">소개</a>
+                    <ul>
+                        <li><a href="#">기관소개</a></li>
+                        <li><a href="#">연혁</a></li>
+                        <li><a href="#">투명경영</a></li>
+                        <li><a href="#">함께하는 사람들</a></li>
+                        <li><a href="#">인재채용</a></li>
+                        <li><a href="#">자원봉사자 모집</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="#">활동</a>
+                    <ul>
+                        <li><a href="#">기후·에너지</a></li>
+                        <li><a href="#">해양</a></li>
+                        <li><a href="#">야생동물</a></li>
+                        <li><a href="#">식량</a></li>
+                        <li><a href="#">담수</a></li>
+                        <li><a href="#">산림</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">금융</a></li>
+                        <li><a href="#">비즈니스</a></li>
+                        <li><a href="#">기업 파트너십</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="생활실천.html">참여</a>
+                    <ul>
+                        <li><a href="생활실천.html">생활실천</a></li>
+                        <li><a href="#">어스아워</a></li>
+                        <li><a href="#">기업참여</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="#">소식</a>
+                    <ul>
+                        <li><a href="#">언론보도</a></li>
+                        <li><a href="#">소식</a></li>
+                        <li><a href="#">판다메일</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="#">자료</a>
+                    <ul>
+                        <li><a href="#">보고서</a></li>
+                        <li><a href="#">영상자료</a></li>
+                        <li><a href="#">기후위기 교육페이지</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">후원</a>
+                    <ul>
+                        <li><a href="#">후원 안내</a></li>
+                        <li><a href="#">북극곰보호</a></li>
+                        <li><a href="#">멸종동물보호</a></li>
+                        <li><a href="#">기후변화</a></li>
+                        <li><a href="#">플라스틱프리</a></li>
+                        <li><a href="#">기타 후원 캠페인</a></li>
+                        <li><a href="#">기업 후원</a></li>
+                    </ul>
+                </li>
+            </ul> 
+            
+            <ul class="infor pc">
+                <li><a href="#">자주묻는 질문</a></li>
+                <li><a href="#">마이페이지</a></li>
+            </ul>
+            
+            <button class="hediconbtn pc"><i class="xi-search"></i></button>
+
+            <a href="#" class="pc">후원하기</a>
+        </div>
+
+        <!-- 모바일 -->
+        <button class="burger mob"><i class="xi-bars"></i></button>
+        <!-- 모바일 헤더 네비 총집합본 -->
+        <div class="mgnb mob">
+            <div class="search">
+                <!-- 모바일 네비 닫기버튼 -->
+                <button class="backbtn"><i class="xi-close"></i></button>
+                <!-- 모바일 검색창 -->
+                <div>
+                    <input type="text" placeholder="검색어를 입력해주세요." style="color: #fff; font-size: 15px;">
+                    <button class="hediconbtn"><i class="xi-search"></i></button>
+                </div>
+
+                <ul class="mobinfor">
+                    <li><a href="#">자주묻는 질문</a></li>
+                    <li><a href="#">마이페이지</a></li>
+                    <li><a href="#">후원하기</a></li>
+                </ul>                
+            </div>
+            <!-- 주요네비 -->
+            <div class="mgnbmenu">
+                <ul>
+                    <li class="select"><a href="#">소개</a></li>
+                    <li><a href="#">활동</a></li>
+                    <li><a href="#">참여</a></li>
+                    <li><a href="#">소식</a></li>
+                    <li><a href="#">자료</a></li>
+                    <li><a href="#">후원</a></li>
+                </ul>
+            </div>
+            <!-- 세부네비 -->
+            <div class="msnb">
+                <!-- 소개 -->
+                <ul class="on">
+                    <li><a href="#">기관소개</a></li>
+                    <li><a href="#">연혁</a></li>
+                    <li><a href="#">투명경영</a></li>
+                    <li><a href="#">함께하는 사람들</a></li>
+                    <li><a href="#">인재채용</a></li>
+                    <li><a href="#">자원봉사자 모집</a></li>
+                </ul>
+                <!-- 활동 -->
+                <ul>
+                    <li><a href="#">기후·에너지</a></li>
+                    <li><a href="#">해양</a></li>
+                    <li><a href="#">야생동물</a></li>
+                    <li><a href="#">식량</a></li>
+                    <li><a href="#">담수</a></li>
+                    <li><a href="#">산림</a></li>
+                    <li><a href="#">금융</a></li>
+                    <li><a href="#">비즈니스</a></li>
+                    <li><a href="#">기업 파트너십</a></li>
+                </ul>
+                <!-- 참여 -->
+                <ul>
+                    <li><a href="생활실천.html">생활실천</a></li>
+                    <li><a href="#">어스아워</a></li>
+                    <li><a href="#">기업참여</a></li>
+                </ul>
+                <!-- 소식 -->
+                <ul>
+                    <li><a href="#">언론보도</a></li>
+                    <li><a href="#">소식</a></li>
+                    <li><a href="#">판다메일</a></li>
+                </ul>
+                <!-- 자료 -->
+                <ul>
+                    <li><a href="#">보고서</a></li>
+                    <li><a href="#">영상자료</a></li>
+                    <li><a href="#">기후위기 교육페이지</a></li>
+                </ul>
+                <!-- 후워 -->
+                <ul>
+                    <li><a href="#">후원 안내</a></li>
+                    <li><a href="#">북극곰보호</a></li>
+                    <li><a href="#">멸종위기보호</a></li>
+                    <li><a href="#">기후변화</a></li>
+                    <li><a href="#">플라스틱프리</a></li>
+                    <li><a href="#">기타 후원 캠페인</a></li>
+                    <li><a href="#">기업 후원</a></li>
+                </ul>
+            </div>
+        </div>
+        
+    </header>
+
+    <!-- section1 -->
+    <section id="main1">
+        <h2 class="blind">메인 비주얼영역 wwf와 함께하는 조화로운 미래</h2>
+       <div class="slidebox">
+           <ul class="m1slide">
+                <li>
+                    <img src="img/mainbnr.jpg" alt="img1" class="m1img pc">
+                    <img src="img/모바일배너1.jpg" alt="img1" class="mob">
+                    <h3>BUILDING A FUTURE IN WHICH<br>PEOPLE LIVE IN HARMONY <br class="mob"> WITH NATURE</h3>
+                    <p>WWF와 함께 만드는 사람과 자연의 조화로운 <br class="mob"> 미래</p>
+                    <a href="#">MORE</a>
+                </li>
+
+                <li>
+                    <img src="img/mainbnr2.jpg" alt="img2" class="m1img pc">
+                    <img src="img/모바일배너2.jpg" alt="img2" class="mob">
+                    <h3>BUILDING A FUTURE IN WHICH<br>PEOPLE LIVE IN HARMONY <br class="mob">WITH NATURE</h3>
+                    <p>WWF와 함께 만드는 사람과 자연의 조화로운 <br class="mob"> 미래</p>
+                    <a href="#">MORE</a>
+                </li>
+                
+            </ul>
+
+            <ul class="page">
+                <li>·</li>
+                <li>·</li>
+            </ul>
+
+            <div class="controlbox">
+                <button class="prev pc"><i class="xi-angle-left"></i></button>
+                <button class="next pc"><i class="xi-angle-right"></i></button>
+                <button class="play mob"><i class="xi-pause"></i></button>
+                <button class="play on mob"><i class="xi-play"></i></button>
+            </div>
+       </div>
+        
+    </section>
+
+    <!-- section2 -->
+    <section id="main2">
+        <h2 class="blind">최근소식</h2>
+
+        <div class="wrap">
+            <h4>최신 소식</h4>
+            <p class="block"></p>
+
+            <ul class="news">
+                <li class="select"><a href="# none">전체보기 <i class="xi-angle-right-min"></i></a></li>
+                <li><a href="# none">언론보도 <i class="xi-angle-right-min"></i></a></li>
+                <li><a href="# none">소식 <i class="xi-angle-right-min"></i></a></li>
+                <li><a href="# none">판다메일 <i class="xi-angle-right-min"></i></a></li>
+            </ul>
+        </div>
+        <!-- 전제보기 -->
+        <ul class="allsee on">
+            <li>
+                <a href="#">
+                    <figure><img src="img/최근소식1.jpg" alt="asd"></figure>
+                    <span>18 Sep 2023</span>
+                    <h5>[소식] WWF-Korea, 국회 기<br>후대응기금세미나 개최</h5>
+                    <p><i class="xi-angle-right-min"></i> 자세히 보기</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <figure><img src="img/최근소식2.jpg" alt="asd"></figure>
+                    <span>24 Aug 2023</span>
+                    <h5>[기고] 라면, 열대우림 그리고<br>지속 가능한 팜유</h5>
+                    <p><i class="xi-angle-right-min"></i> 자세히 보기</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <figure><img src="img/최근소식3.jpg" alt="asd"></figure>
+                    <span>11 Aug 2023</span>
+                    <h5>[소식] WWF-Korea, 지속가<br class="pc">능 포장재 포럼 및 사례 공<br>유</h5>
+                    <p><i class="xi-angle-right-min"></i> 자세히 보기</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <figure><img src="img/최근소식4.jpg" alt="asd"></figure>
+                    <span>04 Aug 2023</span>
+                    <h5>2023년 8월 판다메일</h5>
+                    <p><i class="xi-angle-right-min"></i> 자세히 보기</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <figure><img src="img/최근소식5.jpg" alt="asd"></figure>
+                    <span>04 Aug 2023</span>
+                    <h5>[보도자료] WWF, '그린터뷰'<br>시즌2 공개</h5>
+                    <p><i class="xi-angle-right-min"></i> 자세히 보기</p>
+                </a>
+            </li>
+        </ul>
+
+        <!-- 판다메일 -->
+        <ul class="allsee">
+            <li>
+                <a href="#">
+                    <figure><img src="img/최근소식3.jpg" alt="asd"></figure>
+                    <span>55 Sep 3333</span>
+                    <h5>asdasdasdasd<br>후asdasdasdasdasdasd</h5>
+                    <p><i class="xi-angle-right-min"></i> 자세히 보기</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <figure><img src="img/최근소식4.jpg" alt="asd"></figure>
+                    <span>24 Aug 2883</span>
+                    <h5>[기고] asdasdasdasdasd리고<br>지속 asdasdasdasd팜유</h5>
+                    <p><i class="xi-angle-right-min"></i> 자세히 보기</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <figure><img src="img/최근소식1.jpg" alt="asd"></figure>
+                    <span>11 Aug 3523</span>
+                    <h5>[소식] asdasdasdasd가<br class="pc">능 포asdasdasd 사례 공<br>유</h5>
+                    <p><i class="xi-angle-right-min"></i> 자세히 보기</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <figure><img src="img/최근소식5.jpg" alt="asd"></figure>
+                    <span>04 Aug 1023</span>
+                    <h5>20asdasdasdasd일</h5>
+                    <p><i class="xi-angle-right-min"></i> 자세히 보기</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <figure><img src="img/최근소식2.jpg" alt="asd"></figure>
+                    <span>04 Aug 7773</span>
+                    <h5>[보도자료asdasdasd터뷰'<br>시즌asdasdasd개</h5>
+                    <p><i class="xi-angle-right-min"></i> 자세히 보기</p>
+                </a>
+            </li>
+        </ul>
+
+        <!-- 소식 -->
+        <ul class="allsee">
+            <li>
+                <a href="#">
+                    <figure><img src="img/최근소식2.jpg" alt="asd"></figure>
+                    <span>55 Sep 3333</span>
+                    <h5>asdasdasdasd<br>후asdasdasdasdasdasd</h5>
+                    <p><i class="xi-angle-right-min"></i> 자세히 보기</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <figure><img src="img/최근소식4.jpg" alt="asd"></figure>
+                    <span>24 Aug 2883</span>
+                    <h5>[기고] asdasdasdasdasd리고<br>지속 asdasdasdasd팜유</h5>
+                    <p><i class="xi-angle-right-min"></i> 자세히 보기</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <figure><img src="img/최근소식5.jpg" alt="asd"></figure>
+                    <span>11 Aug 3523</span>
+                    <h5>[소식] asdasdasdasd가<br class="pc">능 포asdasdasd 사례 공<br>유</h5>
+                    <p><i class="xi-angle-right-min"></i> 자세히 보기</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <figure><img src="img/최근소식3.jpg" alt="asd"></figure>
+                    <span>04 Aug 1023</span>
+                    <h5>20asdasdasdasd일</h5>
+                    <p><i class="xi-angle-right-min"></i> 자세히 보기</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <figure><img src="img/최근소식1.jpg" alt="asd"></figure>
+                    <span>04 Aug 7773</span>
+                    <h5>[보도자료asdasdasd터뷰'<br>시즌asdasdasd개</h5>
+                    <p><i class="xi-angle-right-min"></i> 자세히 보기</p>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- section3 -->
+    <section id="main3">
+        <h2 class="blind">함께하면 가능</h2>
+
+        <div>
+            <h3>함께라면 가능합니다.</h3>
+            <h4>TOGETHER POSSIBLE</h4>
+            <a href="#">후원하기</a>
+        </div>
+    </section>
+
+    <!-- section4 -->
+    <section id="main4">
+        <h2 class="blind">WWF 활동분야</h2>
+
+        <div class="wrap">
+            <h4>WWF 활동분야</h4>
+            <p class="block"></p>
+            <span>WWF는 사람과 자연이 조화로운 미래를<br class="mob"> 만들어가기 위해 아래 6개 보전 영역에 걸쳐<br class="mob"> 활동하고 있습니다.</span>
+        </div>
+
+        <div class="m4sbox">
+            <ul class="m4slide">
+                <li>
+                    <a href="#">
+                        <img src="img/활동분야1.jpg" alt="담수">
+                        <h4>FRESHWAYER</h4>
+                        <P>담수</P>
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="#">
+                        <img src="img/활동분야2.jpg" alt="야생동물">
+                        <h4>WILDLIFE</h4>
+                        <P>야생동물</P>
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="#">
+                        <img src="img/활동분야3.jpg" alt="기후 에너지">
+                        <h4>CLIMATE & ENERGY</h4>
+                        <P>기후·에너지</P>
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="#">
+                        <img src="img/활동분야4.jpg" alt="식량">
+                        <h4>FOOD</h4>
+                        <P>식량</P>
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="#">
+                        <img src="img/활동분야5.jpg" alt="해양">
+                        <h4>OCEANS</h4>
+                        <P>해양</P>
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="#">
+                        <img src="img/활동분야6.jpg" alt="산림">
+                        <h4>FOREST</h4>
+                        <P>산림</P>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <button class="m4prev pc"><i class="xi-angle-left"></i></button>
+        <button class="m4next pc"><i class="xi-angle-right"></i></button>
+    </section>
+
+    <!-- section5 -->
+    <section id="main5">
+        <h2 class="blind">자연과 사람을 위한 뉴딜</h2>
+
+        <div class="wrap">
+
+            <img src="img/귀여운거북이.jpg" alt="꼬북이" class="m5img">
+
+            <div class="m5text">
+                <h3>NEW DEAL<br>FOR NATURE<br>AND PEOPLE</h3>
+                <p class="m5block pc"></p>
+                <h4>자연과 사람을 위한 뉴딜</h4>
+                <span class="pc">생물다양성의 손실을 막고 2030년까지<br>자연을 회복의 길로 전환하기 위한 3가지 주요 목표</span>
+            </div>
+
+
+            <div class="m5icon">
+                <div>
+                    <img src="img/거북이아이콘1.jpg" alt="asd">
+                    <span>자연서식지의<br class="mob"> 보전</span>
+                    <p class="pc">보전 노력의 확대와 지속가능한 관리 및 복원</p>
+                </div>
+
+                <div>
+                    <img src="img/거북이아이콘2.jpg" alt="asd">
+                    <span>생물종 멸종 방지</span>
+                    <p class="pc">지속가능하지 않은 방식의 야생 생물종 착취와<br class="pc"> 불법 거래 종식</p>
+                </div>
+
+                <div>
+                    <img src="img/거북이아이콘3.jpg" alt="asd">
+                    <span>생산과 소비의<br class="mob"> 생태발자국 감소</span>
+                    <p class="pc">에너지, 농업, 어업, 인프라와 같은 여러 분야에서 지속가능한 비즈니스로의 전환과 이를 뒷받침 하기 위한 금융 흐름의 변화 도모</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section6 -->
+    <section id="main6">
+        <h2 class="blind">캠페인</h2>
+
+        <div class="wrap">
+            <h3>캠페인</h3>
+            <p class="m6block"></p>
+            <span>우리의 지구를 지키기 위한 WWF의 캠페인에 함께<br class="mob"> 해주세요.</span>
+        </div>
+
+        <ul class="m6slide">
+            <li>
+                <a href="#">
+                    <figure><img src="img/콬크가족.jpg" alt="북극곰 보호"></figure>
+                    <p>북극곰 보호</p>
+                    <span>북극곰은 먹이사슬의 최상위 포식자라는 것<br>알고 계셨나요? 그렇기에 북극곰이 북극생...</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <figure><img src="img/인간페스티벌.jpg" alt="기후위기"></figure>
+                    <p>기후위기</p>
+                    <span>기후위기에 대응하기 위해서는 기후위기가<br>무엇인지 그리고 그 원인에 대해서 제대로...</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <figure><img src="img/코끼리.jpg" alt="멸종위기 동물 보호"></figure>
+                    <p>멸종위기 동물 보호</p>
+                    <span>WWF-Korea와 함께 멸종위기에 처한 동물<br>들을 지켜주세요.</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <figure><img src="img/돌돔먹고싶다.jpg" alt="플라스틱 프리"></figure>
+                    <p>플라스틱 프리</p>
+                    <span>우리의 일상에서 땔래야 뗄 수 없는 플라스틱,<br>플라스틱의 생산과 폐기까지의 생애를 알...</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- notice newssub -->
+    <section id="main7">
+        <h2 class="blind">뉴스레터 구독하기</h2>
+
+        <div class="wrap">
+            <!-- 소개, 활동, 참여, 소식, 자료, 후원 -->
+            <div class="notice pc">
+                <ul>
+                    <li>소개</li>
+                    <li><a href="#">기관소개</a></li>
+                    <li><a href="#">연혁</a></li>
+                    <li><a href="#">투명경영</a></li>
+                    <li><a href="#">함께하는 사람들</a></li>
+                    <li><a href="#">인재채용</a></li>
+                    <li><a href="#">자원봉사자 모집</a></li>
+                </ul>
+
+                <ul>
+                    <li>활동</li>
+                    <li><a href="#">기후에너지</a></li>
+                    <li><a href="#">해양</a></li>
+                    <li><a href="#">야생동물</a></li>
+                    <li><a href="#">식량</a></li>
+                    <li><a href="#">담수</a></li>
+                    <li><a href="#">산림</a></li>
+                    <li>
+                        <ul class="sky">
+                            <li><a href="#">금융</a></li>
+                            <li><a href="#">비즈니스</a></li>
+                            <li><a href="#">기업 파트너십</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+                <ul>
+                    <li>참여</li>
+                    <li><a href="#">생활 실천</a></li>
+                    <li><a href="#">어스 아워</a></li>
+                    <li><a href="#">기업참여</a></li>
+                </ul>
+
+                <ul>
+                    <li>소식</li>
+                    <li><a href="#">소식</a></li>
+                    <li><a href="#">언론보도</a></li>
+                    <li><a href="#">판다메일</a></li>
+                </ul>
+
+                <ul>
+                    <li>자료</li>
+                    <li><a href="#">보고서</a></li>
+                    <li><a href="#">영상자료</a></li>
+                    <li><a href="#">기후위기 교육페이지</a></li>
+                </ul>
+
+                <ul>
+                    <li>후원</li>
+                    <li><a href="#">북극곰보호</a></li>
+                    <li><a href="#">후원안내</a></li>
+                </ul>
+            </div>
+
+            <!-- 뉴스레터 구독하기란 -->
+            <div class="sub">
+                <h3>뉴스레터 구독하기</h3>
+                <p>WWF 뉴스레터를 구독하고 최근 소식을 받아보세요.<br>입력한 메일 주소로 WWF뉴스레터를 받아보실 수 있습니다.</p>
+
+                <div class="name">
+                    <h4>* 이름</h4>
+                    <span>* 필수입력사항</span><br>
+                    <input type="text">
+
+                    <h4>* 이메일</h4>
+                    <input type="text">
+
+                    <h4>전화번호</h4>
+                    <input type="text">
+                </div>
+
+                <div class="checkbox">
+                    <input type="checkbox" id="pri" value="개인정보 처리방침" name="pri">
+                            <label for="pri"><span>[필수]</span> 개인정보 처리방침</label><br>
+                    <input type="checkbox" id="mar" value="마케팅 수신동의" name="mar">
+                            <label for="mar"><span>[필수]</span> 마케팅 수신동의</label>
+                        <br>
+                    <a href="#">구독신청</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+     <!-- footer -->
+    <footer>
+        <h2 class="blind">하단 웹페이지 정보표시구역</h2>
+    
+        <div class="wrap">
+            <div class="fot1">
+                <ul>
+                    <li><a href="#">후원회원 약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">자주묻는질문</a></li>
+                    <li><a href="#">문의</a></li>
+                </ul>
+                <!-- sns  -->
+                <ul class="sns">
+                    <li><img src="img/푸터-follow.jpg" alt="follow us"></li>
+                    <li><a href="https://www.instagram.com/wwfkorea/" target="_blank"><img src="img/insta.jpg" alt="insta"></a></li>
+                    <li><a href="https://www.facebook.com/WWFKorea/" target="_blank"><img src="img/facebook.jpg" alt="facebook"></a></li>
+                    <li><a href="https://www.youtube.com/c/WWFKorea/featured" target="_blank"><img src="img/youtube.jpg" alt="youtube"></a></li>
+                    <li><a href="https://blog.naver.com/wwf-korea" target="_blank"><img src="img/blog.jpg" alt="blog"></a></li>
+                </ul>
+            </div>
+    
+            <div class="addr">
+                <img src="img/logo.png" alt="세계자연기금 로고">
+    
+                <div>
+                    <h3>재단법인 한국세계자연기금</h3>
+                    <ul>
+                        <li><span>대표자</span> 홍정욱</li>
+                        <li><span>고유번호</span> 101-82-23485</li><br class="mob">
+                        <li><span>주소</span> 서울특별시 종로구 종로 47(공평동) SC제일은행본점<br class="mob">빌딩 15층 (재) 한국세계자연기금</li><br class="mob">
+                        <li><span>대표전화</span> <a href="tel:027221601">02-722-1601</a></li><br>
+                        <li><span>후원문의</span> <a href="mailto:">members@wwfkorea.or.kr</a></li><br class="mob">
+                        <li><span>기업문의</span> <a href="mailto:">partnership@wwfkorea.or.kr</a></li><br class="mob">
+                        <li><span>홍보 및 마케팅 문의</span> <a href="mailto:">marketing@wwfkorea.or.kr</a></li><br class="mob">
+                        <li><span>기타문의</span> <a href="mailto:">info@wwfkorea.or.kr</a></li>
+                    </ul>
+    
+                    <address>
+                        <span>&copy; 2021 WWF - World Wide Fund For Nature (also<br class="mob"> Known as World Wildlife Fund). <br class="mob">
+                            <span style="text-decoration: underline;">Creative Commons licence.</span>
+                        </span>
+                    </address>
+                </div>
+            </div>
+        </div>
+    </footer>
+   
+
+
+    <!-- 메인페이지 탑버튼  -->
+    <a href="#" class="pagetop"><i class="xi-angle-up"></i></a>
+    <script src="main.js"></script>
+    <script src="visualbenner.js"></script>
+</body>
+
+
+</html>
